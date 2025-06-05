@@ -225,6 +225,27 @@ header.scrolled {
 }
 
 
+.framework-logos {
+  margin-top: 50px; /* Lebih banyak space dari paragraf */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px; /* Lebih renggang antar logo */
+  flex-wrap: wrap;
+}
+
+.framework-logos img {
+  height: 80px; /* Logo diperbesar */
+  max-height: 90px;
+  transition: transform 0.3s ease;
+}
+
+
+.framework-logos img:hover {
+  transform: scale(1.1);
+}
+
+
 @keyframes fadeInUp {
   from {
     opacity: 0;
