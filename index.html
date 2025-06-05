@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mantanest - Application Development Services</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+        font-family: 'Inter', sans-serif;
+        color: #1a1a1a;
+        background-color: #ffffff;
+        scroll-behavior: smooth;
+    }
+
+
+    header {
+      width: 100%;
+      padding: 20px 40px;
+      background-color: #ffffff;
+      position: fixed;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+
+    .nav-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: 700;
+      color: #2a2a2a;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 30px;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #2a2a2a;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    .nav-links a:hover {
+      color: #0070f3;
+    }
+
+    .hero {
+      height: 100vh;
+      background: linear-gradient(to right, #ffffff, #f0f4ff);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 0 20px;
+      margin-top: 80px;
+    }
+
+    .hero-content {
+      max-width: 700px;
+    }
+
+    .hero h2 {
+      font-size: 42px;
+      font-weight: 700;
+      margin-bottom: 20px;
+      color: #1a1a1a;
+    }
+
+    .hero p {
+      font-size: 18px;
+      margin-bottom: 30px;
+      color: #4a4a4a;
+    }
+
+    .cta-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .btn-primary {
+      padding: 12px 24px;
+      background-color: #0070f3;
+      color: #ffffff;
+      font-weight: 600;
+      text-decoration: none;
+      border-radius: 6px;
+      transition: background 0.3s ease;
+    }
+
+    .btn-primary:hover {
+      background-color: #005bd1;
+    }
+
+    .btn-secondary {
+      padding: 12px 24px;
+      border: 2px solid #0070f3;
+      color: #0070f3;
+      font-weight: 600;
+      text-decoration: none;
+      border-radius: 6px;
+      transition: all 0.3s ease;
+    }
+
+    .btn-secondary:hover {
+      background-color: #e6f0ff;
+    }
+
+    .info-section {
+      padding: 80px 20px;
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+    }
+
+    .info-section.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .section-content {
+      max-width: 800px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .section-content h3 {
+      font-size: 28px;
+      margin-bottom: 16px;
+    }
+
+    .section-content p {
+      font-size: 16px;
+      color: #4a4a4a;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 30px 20px;
+      background-color: #f9f9f9;
+      font-size: 14px;
+      color: #777;
+    }
+
+    section[id] {
+        transition: 0.2s;
+        scroll-margin-top: 100px;
+    }
+
+    
+
+    @media (max-width: 768px) {
+      .nav-links {
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      .hero h2 {
+        font-size: 32px;
+      }
+
+      .cta-buttons {
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="nav-container">
+      <h1 class="logo">Mantanest</h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#services">Services</a></li>
+          <li><a href="#product">Product</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h2>Build Your Dream App<br>with Modern Technology</h2>
+      <p>We develop apps using JavaScript, Spring Boot, and Android/Hybrid Mobile platforms.</p>
+      <div class="cta-buttons">
+        <a href="#contact" class="btn-primary">Free Consultation</a>
+        <a href="#product" class="btn-secondary">See Product</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="services" class="info-section">
+    <div class="section-content">
+      <h3>We Build Web Applications Using JS and PHP</h3>
+      <p>Our team specializes in creating scalable and modern web apps with JavaScript frameworks and PHP technologies tailored for your needs.</p>
+    </div>
+  </section>
+
+  <section id="product" class="info-section">
+    <div class="section-content">
+      <h3>One of Our Products</h3>
+      <p>Take a look at our latest project: a note-sharing platform built with Spring Boot and JavaScript, enabling users to upload, manage, and share study notes seamlessly.</p>
+    </div>
+  </section>
+
+  <section id="contact" class="info-section">
+    <div class="section-content">
+      <h3>Contact Us</h3>
+      <p>You can reach us via WhatsApp by clicking the icon below:</p>
+      <a href="https://wa.me/6281234567890" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" style="width:48px; height:48px;" />
+      </a>
+    </div>
+  </section>
+
+  <section class="footer">
+    <p>&copy; 2025 Mantanest. All rights reserved.</p>
+  </section>
+
+  <script src="index.js"></script>
+</body>
+</html>
