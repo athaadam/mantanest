@@ -207,7 +207,7 @@ section[id] {
   border-radius: 8px;
 }
 
-.btn-primary {
+.btn-notepad {
   padding: 12px 24px;
   background-color: #22c55e;
   color: #ffffff;
@@ -219,7 +219,7 @@ section[id] {
   box-shadow: 0 2px 8px rgba(34,197,94,0.10);
 }
 
-.btn-primary:hover {
+..btn-notepad:hover {
   background-color: #16a34a;
   transform: scale(1.08);
   box-shadow: 0 6px 24px rgba(34,197,94,0.18);
