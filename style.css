@@ -217,11 +217,12 @@ section[id] {
   transition: background 0.3s, transform 0.25s, box-shadow 0.25s;
   font-size: 18px;
   box-shadow: 0 2px 8px rgba(34,197,94,0.10);
+  margin-top: 40px;
 }
 
 .btn-notepad:hover {
   background-color: #16a34a;
-  transform: scale(1.08);
+  transform: scale(1.2);
   box-shadow: 0 6px 24px rgba(34,197,94,0.18);
 }
 
